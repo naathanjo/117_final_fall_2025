@@ -8,7 +8,7 @@
         "http://localhost/design_style/index.html",
         "http://localhost/client_site/index.html"
       ],
-      "numberOfRuns": 3
+      "numberOfRuns": 1
     },
     "assert": {
       "assertions": {

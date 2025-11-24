@@ -1,8 +1,8 @@
 /* GreenLeaf Landscaping Theme */
 :root {
-    --primary-green: #2E8B57;
+    --primary-green: #1F7A46;
     --light-green: #F0FFF4;
-    --dark-text: #2D3748;
+    --dark-text: #1A202C;
     --white: #FFFFFF;
 }
 
@@ -121,8 +121,13 @@ nav {
     max-width: 650px;
     margin-left: auto;
     margin-right: auto;
-    color: #4a5568;
+    color: var(--dark-text); /* Darker for contrast */
     font-weight: 500;
+}
+
+/* Accessibility: Darker text for better contrast */
+p {
+    color: var(--dark-text);
 }
 
 /* Services */
@@ -187,7 +192,7 @@ label {
     margin-bottom: 8px;
     font-weight: 600;
     font-size: 0.95rem;
-    color: #4a5568;
+    color: #2d3748; /* Darker for contrast */
 }
 
 input, textarea, select {
@@ -233,7 +238,7 @@ footer {
     text-align: center;
     padding: 60px 0;
     font-size: 0.9rem;
-    color: #718096;
+    color: var(--dark-text); /* Darker for contrast */
     background-color: #f7fafc;
 }
 

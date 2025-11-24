@@ -1,6 +1,6 @@
 /* Swiss International Style - Portfolio Theme */
 :root {
-    --color-primary: #FF3300; /* Swiss Red */
+    --color-primary: #D42A00; /* Darker Swiss Red for Accessibility */
     --color-black: #000000;
     --color-white: #FFFFFF;
     --color-grey: #F0F0F0;
@@ -76,8 +76,13 @@ h3 {
 p {
     margin-bottom: 1.5rem;
     max-width: 65ch; /* Optimal reading length */
-    font-weight: 300;
-    color: #333333; /* Slightly softer black for reading */
+    font-weight: 400;
+    color: #000000; /* Pure black for maximum contrast */
+}
+
+/* Accessibility: Ensure sufficient contrast for text on images */
+.hero-text p {
+    color: #000000;
 }
 
 a {
@@ -179,7 +184,7 @@ section.visible {
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    color: #999999;
+    color: #222222; /* Darker for contrast */
     position: relative;
     overflow: hidden;
     border-radius: 4px;
