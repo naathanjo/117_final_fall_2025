@@ -1,0 +1,53 @@
+/* --- 1. CSS Reset & Global Styling --- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    min-height: 100vh;
+    font-family: var(--font-primary);
+}
+
+/* --- 2. CSS Variables (Design Tokens) for The Creator/Creative Tech --- */
+:root {
+    /* Color Palette (Modern, Energetic, Creative) */
+    --color-primary: #58508D;         /* Deep Purple (Authoritative/Creative) */
+    --color-secondary: #FF5733;       /* Bright Orange/Red (Accent/Action) */
+    --color-accent: #FFC300;          /* Bright Yellow (Focus) */
+    --color-background: #F0F0F0;      /* Light gray background */
+    --color-text-primary: #1C1C1C;    /* Near-black for readability */
+    --color-text-secondary: #555555;  /* Gray for secondary text */
+
+    /* Fluid Typography Scale (REQUIRED) */
+    --font-size-base: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
+    --font-size-h1: clamp(3rem, 2.07rem + 4.63vw, 8rem);
+    
+    /* Spacing & Layout */
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --border-radius: 8px;
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+/* Apply fluid base font size */
+html {
+    font-size: var(--font-size-base);
+}
+
+h1 { font-size: var(--font-size-h1); }
+h2 { font-size: calc(var(--font-size-base) * 2.5); }
+/* Basic Link Styling */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color: var(--color-secondary);
+}

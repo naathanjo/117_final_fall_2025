@@ -1,171 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IS117 Final Project - Portfolio Collection</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IS117 Final Project Portfolio Hub</title>
+    <link rel="stylesheet" href="global.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+        /* Styles specific to the Landing Page (as per example image_65d856.jpg) */
+        .page-container {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            padding: 20px;
+            padding: var(--spacing-lg) var(--spacing-md);
+            background: linear-gradient(135deg, var(--color-primary), #9370DB); 
+            color: white;
+            min-height: 100vh;
         }
-        
-        .container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            padding: 60px;
-            max-width: 900px;
+        .intro-text {
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+            max-width: 800px;
+        }
+        .intro-text h1 { color: white; }
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-md);
+            max-width: 1000px;
             width: 100%;
         }
-        
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #2d3748;
-        }
-        
-        p {
-            font-size: 1.1rem;
-            color: #4a5568;
-            margin-bottom: 40px;
-            line-height: 1.6;
-        }
-        
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-        }
-        
-        .card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 16px;
-            padding: 32px;
+        .project-card {
+            background-color: rgba(255, 255, 255, 0.15); 
+            backdrop-filter: blur(5px);
+            border-radius: var(--border-radius);
+            padding: var(--spacing-md);
             text-align: center;
-            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease;
             color: white;
-            box-shadow: 0 4px 16px rgba(102, 126, 234, 0.25);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            position: relative;
-            overflow: hidden;
         }
-        
-        .card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
-            opacity: 0;
-            transition: opacity 0.4s;
-        }
-        
-        .card:hover::before {
-            opacity: 1;
-        }
-        
-        .card:hover {
-            transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 20px 48px rgba(102, 126, 234, 0.35), 0 8px 16px rgba(0, 0, 0, 0.1);
-        }
-        
-        .card h2 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .card p {
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 25px;
-            font-size: 0.95rem;
-        }
-        
-        .card a {
+        .project-card h2 { color: var(--color-accent); }
+        .view-button {
             display: inline-block;
-            background: white;
-            color: #667eea;
-            padding: 13px 32px;
-            border-radius: 50px;
+            background-color: var(--color-secondary); 
+            color: white;
+            padding: 0.75rem 1.5rem;
             text-decoration: none;
-            font-weight: 700;
-            font-size: 0.95rem;
-            letter-spacing: 0.3px;
-            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .card a::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            background: rgba(102, 126, 234, 0.1);
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-            transition: width 0.5s, height 0.5s;
-        }
-        
-        .card a:hover::before {
-            width: 300px;
-            height: 300px;
-        }
-        
-        .card a:hover {
-            background: #f7fafc;
-            transform: translateY(-2px) scale(1.05);
-            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                padding: 30px;
-            }
-            
-            h1 {
-                font-size: 2rem;
-            }
+            border-radius: 4px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>IS117 Final Project Portfolio</h1>
-        <p>Welcome! This collection showcases three distinct web projects demonstrating modern web development, design principles, and strategic positioning.</p>
-        
-        <div class="grid">
-            <div class="card">
-                <h2>Portfolio Site</h2>
-                <p>AI Product Engineer portfolio with Swiss International Style design.</p>
-                <a href="portfolio/index.html">View Portfolio</a>
+    <div class="page-container">
+        <header class="intro-text">
+            <h1>IS117 Final Project Portfolio</h1>
+            <p>Welcome! This collection showcases three distinct web projects demonstrating mastery in modern web development, design principles, and strategic positioning as a Creative Tech Engineer.</p>
+        </header>
+        <main class="project-grid">
+            <div class="project-card">
+                <h2>1. Personal Portfolio Site</h2>
+                <p>Creative Tech Engineer portfolio focused on interactive UX and The Creator archetype.</p>
+                <a href="portfolio/index.html" class="view-button">View Portfolio</a>
             </div>
-            
-            <div class="card">
-                <h2>Design Style Site</h2>
-                <p>Educational museum piece exploring the International Typographic Style.</p>
-                <a href="design_style/index.html">View Design History</a>
+            <div class="project-card">
+                <h2>2. Design Style Site</h2>
+                <p>Educational 'museum piece' exploring the required International Typographic Style (Swiss Design).</p>
+                <a href="design_style/index.html" class="view-button">View Design History</a>
             </div>
-            
-            <div class="card">
-                <h2>Client Site</h2>
-                <p>Business website for GreenLeaf Landscaping with integrated sales funnel.</p>
-                <a href="client_site/index.html">View Client Work</a>
+            <div class="project-card">
+                <h2>3. Client Website (TrailMapper AI)</h2>
+                <p>A conversion-optimized business website for a creative tech client, featuring a sales funnel design.</p>
+                <a href="client_site/index.html" class="view-button">View Client Work</a>
             </div>
-        </div>
+        </main>
     </div>
 </body>
 </html>
