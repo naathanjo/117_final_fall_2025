@@ -3,113 +3,255 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#1F7A46" />
-    <title>GreenLeaf Landscaping | Professional Lawn Care</title>
-    <meta name="description" content="Professional landscaping and lawn care services for residential and commercial properties. Get a free quote today." />
+    <title>TrailMapper | Adventure Trail Safety & Navigation</title>
+    <meta name="description" content="TrailMapper helps adventurers of all types explore trails safely with offline maps, AI safety alerts, and real-time location sharing. Get your free safety guide today." />
     
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="GreenLeaf Landscaping | Professional Lawn Care" />
-    <meta property="og:description" content="Your dream lawn, delivered. Professional landscaping services starting at $50/week." />
+    <meta property="og:title" content="TrailMapper | Adventure Trail Safety & Navigation" />
+    <meta property="og:description" content="Explore trails confidently with offline maps, AI-powered safety alerts, and smart location sharing for all hikers." />
     <meta property="og:image" content="images/og-image.jpg" />
+    <meta property="og:url" content="https://trailmapper.com" />
     
-    <link rel="stylesheet" href="style.css" />
+    <!-- Performance optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://cdn.example.com" />
+    
+    <link rel="stylesheet" href="../../global.css" />
+    <link rel="stylesheet" href="css/client-styles.css" />
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-    <header>
-        <div class="container">
-            <nav>
-                <a href="#" class="logo">GreenLeaf.</a>
-                <a href="#quote" class="cta-button">Get a Free Quote</a>
+    <header class="navbar">
+        <div class="container navbar-container">
+            <div class="logo-section">
+                <h1 class="logo">TrailMapper</h1>
+            </div>
+            
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#cta">Get Started</a></li>
+                </ul>
             </nav>
         </div>
     </header>
 
     <main id="main-content">
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <h1>Your Dream Lawn, Delivered.</h1>
-                <p>We handle the hard work so you can enjoy your weekend. Professional landscaping services starting at $50/week.</p>
-                <a href="#quote" class="cta-button">Start Your Transformation</a>
-            </div>
-        </section>
+        <section class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h2>Explore Trails with Confidence</h2>
+                    <p class="hero-subtitle">Keep yourself and your crew safe on every adventure with real-time location sharing, AI-powered safety alerts, and offline maps that work anywhere.</p>
+                    <a href="#cta" class="btn btn-primary">Get Free Safety Guide</a>
+                </div>
 
-        <!-- Services Section -->
-        <section class="services-section">
-            <div class="container">
-                <h2 class="section-title">Our Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <img src="images/service-maintenance.jpg" alt="Professional lawn mower cutting perfectly striped green grass showing high-quality lawn maintenance service" class="service-image" />
-                        <span class="service-icon">✂️</span>
-                        <h3>Lawn Maintenance</h3>
-                        <p>Weekly mowing, edging, and cleanup to keep your yard looking pristine.</p>
-                    </div>
-                    <div class="service-card">
-                        <img src="images/service-design.jpg" alt="Beautiful garden landscape with colorful perennial flowers, modern stone pathways, and professional hardscaping design" class="service-image" />
-                        <span class="service-icon">🌿</span>
-                        <h3>Garden Design</h3>
-                        <p>Custom planting schemes and hardscaping to boost your curb appeal.</p>
-                    </div>
-                    <div class="service-card">
-                        <img src="images/service-cleanup.jpg" alt="Autumn leaves being raked on green lawn during professional fall yard cleanup service" class="service-image" />
-                        <span class="service-icon">🍂</span>
-                        <h3>Seasonal Cleanup</h3>
-                        <p>Spring and Fall cleanup services to prepare your lawn for the changing seasons.</p>
-                    </div>
+                <div class="hero-image">
+                    <img src="images/hero-trailmapper.jpg" alt="Active adventurers hiking on a scenic mountain trail with TrailMapper app displayed on smartphone" />
                 </div>
             </div>
         </section>
 
-        <!-- Sales Funnel / Contact Form -->
-        <section id="quote" class="contact-section">
+        <!-- Features Section -->
+        <section id="features" class="features-section">
             <div class="container">
-                <div class="form-wrapper">
-                    <h2 class="text-center mb-20">Get Your Free Estimate</h2>
-                    <p class="text-center mb-30">Fill out the form below and we'll get back to you within 24 hours.</p>
+                <h2>Why Adventurers Choose TrailMapper</h2>
+                <p class="section-intro">Three core features that keep you safe on the trail</p>
+
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/icon-offline-maps.jpg" alt="Offline maps icon" />
+                        </div>
+                        <h3>Offline Maps</h3>
+                        <p>Download detailed topographic maps before you hit the trail. Navigate confidently in areas with zero cell service, with turn-by-turn guidance that works completely offline.</p>
+                        <ul class="feature-list">
+                            <li>High-resolution terrain data</li>
+                            <li>Elevation profiles</li>
+                            <li>Zero data dependency</li>
+                        </ul>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/icon-safety-alerts.jpg" alt="AI safety alerts icon" />
+                        </div>
+                        <h3>AI Safety Alerts</h3>
+                        <p>Machine learning algorithms analyze weather patterns, trail conditions, and hazard reports in real-time. Receive proactive alerts about potential dangers before they affect your adventure.</p>
+                        <ul class="feature-list">
+                            <li>Weather monitoring</li>
+                            <li>Hazard detection</li>
+                            <li>Predictive warnings</li>
+                        </ul>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">
+                            <img src="images/icon-family-sharing.jpg" alt="Location sharing icon" />
+                        </div>
+                        <h3>Location Sharing</h3>
+                        <p>Real-time location tracking keeps your crew connected on the trail. Share your position with hiking partners or trusted contacts. Geofencing triggers instant notifications if someone wanders off the designated path.</p>
+                        <ul class="feature-list">
+                            <li>Real-time GPS tracking</li>
+                            <li>Smart geofencing</li>
+                            <li>Instant notifications</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof / Testimonial Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2>Trusted by Adventurers</h2>
+                <p class="section-intro">See how TrailMapper has changed the way people explore</p>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-content">
+                        <blockquote>
+                            <p>"TrailMapper is essential for my trips. Whether I'm out with friends or doing a solo trek, the offline maps and AI alerts give me total peace of mind. It's completely transformed how I approach trail planning and safety."</p>
+                        </blockquote>
+                        
+                        <footer class="testimonial-author">
+                            <img src="images/testimonial-erick-rosas.jpg" alt="Erick Rosas, Adventure Photographer & Trekker" class="author-image" />
+                            <div class="author-info">
+                                <h4>Erick Rosas</h4>
+                                <p>Adventure Photographer & Trekker</p>
+                                <div class="rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-text">5/5 Stars</span>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section id="cta" class="cta-section">
+            <div class="container cta-container">
+                <div class="cta-content">
+                    <h2>Start Your Safe Trail Adventures Today</h2>
+                    <p>Get your free adventure trail safety guide and discover the top 50 beginner-friendly trails in your region.</p>
                     
-                    <form action="https://hooks.zapier.com/hooks/catch/123456/abcdef/" method="POST" aria-label="Quote request form">
+                    <form class="cta-form" aria-label="Trail safety guide signup">
                         <div class="form-group">
-                            <label for="name">Full Name</label>
-                            <input type="text" id="name" name="name" required />
+                            <input 
+                                type="email" 
+                                placeholder="Enter your email address" 
+                                required 
+                                aria-label="Email address"
+                            />
                         </div>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" id="email" name="email" required />
-                        </div>
-                        <div class="form-group">
-                            <label for="service">Service Interested In</label>
-                            <select id="service" name="service">
-                                <option value="maintenance">Weekly Maintenance</option>
-                                <option value="design">Garden Design</option>
-                                <option value="cleanup">Seasonal Cleanup</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Project Details</label>
-                            <textarea id="message" name="message" rows="4"></textarea>
-                        </div>
-                        <div class="form-group checkbox-group">
-                            <input type="checkbox" id="privacy" name="privacy" required />
-                            <label for="privacy">I agree to the Privacy Policy.</label>
-                        </div>
-                        <button type="submit">Request Quote</button>
+                        <button type="submit" class="btn btn-secondary">Download Free Guide</button>
                     </form>
+
+                    <p class="cta-disclaimer">No credit card required. Unsubscribe anytime.</p>
+                </div>
+
+                <div class="cta-image">
+                    <img src="images/cta-safety-guide.jpg" alt="TrailMapper Adventure Trail Safety Guide mockup displayed on tablet" />
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 GreenLeaf Landscaping. All rights reserved.</p>
-            <p><a href="../portfolio/index.html" style="color: inherit;">&larr; Back to Portfolio</a></p>
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>TrailMapper</h5>
+                    <p>Making trail adventures safer and more enjoyable for all adventurers.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#cta">Get Started</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Safety Disclaimer</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Connect</h5>
+                    <ul class="social-links">
+                        <li><a href="#" aria-label="Visit our Facebook page">Facebook</a></li>
+                        <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                        <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 TrailMapper. All rights reserved.</p>
+                <p><a href="../../index.html" class="portfolio-link">Jonathan Rojas Portfolio</a></p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            const isExpanded = hamburger.getAttribute('aria-expanded') === 'true';
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.setAttribute('aria-expanded', 'false');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.navbar')) {
+                hamburger.setAttribute('aria-expanded', 'false');
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
