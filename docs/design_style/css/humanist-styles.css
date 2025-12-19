@@ -1,0 +1,687 @@
+/* =====================================================
+   CSS Variables - Humanist Modernism Palette
+   ===================================================== */
+:root {
+    /* Color variables - Warm, Human-Centered */
+    --color-primary: #2a2a2a;
+    --color-secondary: #f9f7f2;
+    --color-accent: #d97706;
+    --color-text: #2a2a2a;
+    --color-text-light: #555555;
+    --color-bg: #f9f7f2;
+    --color-bg-alt: #ffffff;
+    
+    /* Font variables - Humanist Sans-Serif */
+    --font-primary: 'Open Sans', 'Segoe UI', 'Trebuchet MS', sans-serif;
+    --font-secondary: 'Georgia', 'Garamond', serif;
+    
+    /* Fluid font sizing with clamp() */
+    --font-size-h1: clamp(2.5rem, 6vw, 4rem);
+    --font-size-h2: clamp(1.75rem, 4.5vw, 2.8rem);
+    --font-size-h3: clamp(1.25rem, 3vw, 1.6rem);
+    --font-size-body: clamp(0.95rem, 2vw, 1.1rem);
+    --font-size-small: clamp(0.85rem, 1.5vw, 0.95rem);
+    
+    /* Spacing variables */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-xxl: 4rem;
+    
+    /* Line height - Humanist emphasis on legibility */
+    --line-height-body: 1.7;
+    --line-height-heading: 1.3;
+    
+    /* Transition variables */
+    --transition-fast: 0.2s ease-in-out;
+    --transition-smooth: 0.4s ease-in-out;
+    --transition-slow: 0.8s ease-in-out;
+}
+
+/* =====================================================
+   Global Styles
+   ===================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: var(--line-height-body);
+}
+
+/* 12-Column CSS Grid Container */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-lg);
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+/* =====================================================
+   Skip to Content Link
+   ===================================================== */
+.skip-to-content {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: 999;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.skip-to-content:focus {
+    clip: auto;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    top: var(--spacing-sm);
+    left: var(--spacing-sm);
+}
+
+/* =====================================================
+   Hero Header
+   ===================================================== */
+.hero-header {
+    background: linear-gradient(135deg, var(--color-primary) 0%, #3d3d3d 100%);
+    color: var(--color-secondary);
+    padding: var(--spacing-xxl) 0;
+    text-align: center;
+}
+
+.hero-header .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.hero-header h1 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h1);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: var(--line-height-heading);
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-body);
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    max-width: 600px;
+    opacity: 0.92;
+    margin: 0;
+    line-height: var(--line-height-body);
+}
+
+/* =====================================================
+   Main Content
+   ===================================================== */
+main {
+    background-color: var(--color-bg);
+}
+
+/* =====================================================
+   Section Header Styles
+   ===================================================== */
+.section-header {
+    grid-column: span 12;
+    margin-bottom: var(--spacing-xxl);
+    padding-bottom: var(--spacing-xl);
+    border-bottom: 1px solid rgba(42, 42, 42, 0.15);
+}
+
+.section-header h2 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h2);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    margin-bottom: var(--spacing-md);
+    line-height: var(--line-height-heading);
+}
+
+.section-intro {
+    font-size: var(--font-size-body);
+    color: var(--color-text-light);
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin: 0;
+    line-height: var(--line-height-body);
+}
+
+/* =====================================================
+   Organic Geometry Section
+   ===================================================== */
+.organic-geometry-section {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--color-bg);
+}
+
+.geometry-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-xxl);
+    grid-column: span 12;
+}
+
+.geometry-left {
+    grid-column: span 6;
+}
+
+.geometry-right {
+    grid-column: span 6;
+}
+
+.geometry-left h3,
+.geometry-right h3 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h3);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    letter-spacing: 0.01em;
+    line-height: var(--line-height-heading);
+}
+
+.geometry-left p,
+.geometry-right p {
+    font-size: var(--font-size-body);
+    color: var(--color-text-light);
+    line-height: var(--line-height-body);
+    margin-bottom: var(--spacing-lg);
+}
+
+.geometry-left p:first-of-type,
+.geometry-right p:first-of-type {
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+/* =====================================================
+   Human-Centered Clarity Section
+   ===================================================== */
+.clarity-section {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--color-bg-alt);
+}
+
+.clarity-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-xxl);
+    grid-column: span 12;
+}
+
+.clarity-card {
+    grid-column: span 4;
+    padding: var(--spacing-xxl);
+    background-color: var(--color-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(42, 42, 42, 0.08);
+    transition: all var(--transition-smooth);
+}
+
+.clarity-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(42, 42, 42, 0.12);
+}
+
+.clarity-card h3 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h3);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    letter-spacing: 0.01em;
+    line-height: var(--line-height-heading);
+}
+
+.clarity-card p {
+    font-size: var(--font-size-body);
+    color: var(--color-text-light);
+    line-height: var(--line-height-body);
+    margin-bottom: var(--spacing-md);
+}
+
+.clarity-card p:first-child {
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.clarity-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* =====================================================
+   Gallery Section
+   ===================================================== */
+.gallery-section {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--color-bg);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-xxl);
+    grid-column: span 12;
+}
+
+.gallery-item {
+    grid-column: span 6;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    transition: all var(--transition-smooth);
+}
+
+.gallery-item:hover {
+    transform: translateY(-8px);
+}
+
+.gallery-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    margin-bottom: var(--spacing-lg);
+    box-shadow: 0 8px 24px rgba(42, 42, 42, 0.12);
+    transition: all var(--transition-smooth);
+    display: block;
+}
+
+.gallery-item:hover .gallery-image {
+    box-shadow: 0 16px 40px rgba(217, 119, 6, 0.15);
+}
+
+.gallery-item figcaption {
+    padding: 0;
+}
+
+.gallery-item h3 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h3);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 0.01em;
+    line-height: var(--line-height-heading);
+}
+
+.gallery-item p {
+    font-size: var(--font-size-body);
+    color: var(--color-text-light);
+    line-height: var(--line-height-body);
+    margin: 0;
+}
+
+/* =====================================================
+   Modern Legacy Section - Asymmetrical Layout
+   ===================================================== */
+.legacy-section {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--color-bg-alt);
+}
+
+.legacy-content {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-xxl);
+    grid-column: span 12;
+}
+
+/* Asymmetrical column spans: 4, 5, 3 */
+.legacy-left {
+    grid-column: span 4;
+    padding: var(--spacing-xxl);
+    background-color: var(--color-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(42, 42, 42, 0.08);
+    transition: all var(--transition-smooth);
+}
+
+.legacy-center {
+    grid-column: span 5;
+    padding: var(--spacing-xxl);
+    background-color: var(--color-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(42, 42, 42, 0.08);
+    transition: all var(--transition-smooth);
+    border-left: 4px solid var(--color-accent);
+}
+
+.legacy-right {
+    grid-column: span 3;
+    padding: var(--spacing-xxl);
+    background-color: var(--color-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(42, 42, 42, 0.08);
+    transition: all var(--transition-smooth);
+}
+
+.legacy-left:hover,
+.legacy-center:hover,
+.legacy-right:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(42, 42, 42, 0.12);
+}
+
+.legacy-left h3,
+.legacy-center h3,
+.legacy-right h3 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h3);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    letter-spacing: 0.01em;
+    line-height: var(--line-height-heading);
+}
+
+.legacy-left p,
+.legacy-center p,
+.legacy-right p {
+    font-size: var(--font-size-body);
+    color: var(--color-text-light);
+    line-height: var(--line-height-body);
+    margin-bottom: var(--spacing-md);
+}
+
+.legacy-left p:first-of-type,
+.legacy-center p:first-of-type,
+.legacy-right p:first-of-type {
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+.legacy-left p:last-child,
+.legacy-center p:last-child,
+.legacy-right p:last-child {
+    margin-bottom: 0;
+}
+
+/* =====================================================
+   Core Principles Section
+   ===================================================== */
+.principles-section {
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--color-bg);
+}
+
+.principles-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--spacing-lg);
+    grid-column: span 12;
+}
+
+.principle-card {
+    grid-column: span 4;
+    padding: var(--spacing-xl);
+    background-color: var(--color-bg-alt);
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(42, 42, 42, 0.08);
+    border-top: 4px solid var(--color-accent);
+    transition: all var(--transition-smooth);
+    text-align: center;
+}
+
+.principle-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(42, 42, 42, 0.12);
+}
+
+.principle-card h3 {
+    font-family: var(--font-primary);
+    font-size: var(--font-size-h3);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    letter-spacing: 0.01em;
+    line-height: var(--line-height-heading);
+}
+
+.principle-card p {
+    font-size: var(--font-size-body);
+    color: var(--color-text-light);
+    line-height: var(--line-height-body);
+    margin: 0;
+}
+
+/* =====================================================
+   Footer
+   ===================================================== */
+.design-footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: var(--spacing-xl) 0;
+    margin-top: var(--spacing-xxl);
+}
+
+.design-footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-lg);
+    width: 100%;
+}
+
+.design-footer p {
+    font-size: var(--font-size-small);
+    color: rgba(249, 247, 242, 0.85);
+    margin: 0;
+    line-height: var(--line-height-body);
+}
+
+.footer-nav {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.back-to-hub {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-size: var(--font-size-small);
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border: 1px solid var(--color-secondary);
+    border-radius: 8px;
+    transition: all var(--transition-fast);
+    line-height: var(--line-height-body);
+}
+
+.back-to-hub:hover {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: var(--color-primary);
+    transform: translateY(-2px);
+}
+
+/* =====================================================
+   Animations - Fade-in-up with Intersection Observer
+   ===================================================== */
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity var(--transition-slow) ease-out,
+                transform var(--transition-slow) ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =====================================================
+   Responsive Design
+   ===================================================== */
+@media (max-width: 1024px) {
+    .geometry-left {
+        grid-column: span 12;
+    }
+
+    .geometry-right {
+        grid-column: span 12;
+    }
+
+    .clarity-card {
+        grid-column: span 6;
+    }
+
+    .gallery-item {
+        grid-column: span 12;
+    }
+
+    .gallery-image {
+        height: 300px;
+    }
+
+    .legacy-left {
+        grid-column: span 12;
+    }
+
+    .legacy-center {
+        grid-column: span 12;
+        border-left: none;
+        border-top: 4px solid var(--color-accent);
+    }
+
+    .legacy-right {
+        grid-column: span 12;
+    }
+
+    .principle-card {
+        grid-column: span 6;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        gap: var(--spacing-md);
+        padding: 0 var(--spacing-md);
+    }
+
+    .hero-header h1 {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+    }
+
+    .hero-subtitle {
+        font-size: var(--font-size-small);
+    }
+
+    .section-header {
+        margin-bottom: var(--spacing-lg);
+        padding-bottom: var(--spacing-lg);
+    }
+
+    .section-header h2 {
+        font-size: clamp(1.25rem, 3vw, 1.8rem);
+    }
+
+    .organic-geometry-section,
+    .clarity-section,
+    .gallery-section,
+    .legacy-section,
+    .principles-section {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .clarity-card {
+        grid-column: span 12;
+    }
+
+    .principle-card {
+        grid-column: span 12;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-nav {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-header {
+        padding: var(--spacing-xl) 0;
+    }
+
+    .hero-header h1 {
+        font-size: clamp(1.25rem, 3vw, 1.75rem);
+    }
+
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    .geometry-content,
+    .clarity-content,
+    .gallery-grid,
+    .legacy-content,
+    .principles-grid {
+        gap: var(--spacing-lg);
+    }
+
+    .clarity-card,
+    .principle-card,
+    .legacy-left,
+    .legacy-center,
+    .legacy-right {
+        padding: var(--spacing-lg);
+    }
+
+    .section-header h2 {
+        font-size: clamp(1rem, 2.5vw, 1.4rem);
+    }
+
+    .gallery-image {
+        height: 200px;
+    }
+
+    .back-to-hub {
+        width: 100%;
+        text-align: center;
+    }
+
+    .design-footer p,
+    .footer-nav {
+        width: 100%;
+    }
+}
