@@ -2,7 +2,7 @@
 
 **Student:** Jonathan Rojas  
 **Course:** IS117  
-**Live Site:** [Link Coming Soon]
+**Live Site:** https://naathanjo.github.io/117_final_fall_2025/
 
 ---
 
@@ -245,7 +245,7 @@ Consistent spacing hierarchy:
 
 ---
 
-**Portfolio Hub:** [Main Site]  
+**Portfolio Hub:** https://github.com/naathanjo/117_final_fall_2025 
 **Design Study:** Humanist Modernism exploration  
 **Client Project:** TrailMapper – Trail Safety App Landing Page
 
