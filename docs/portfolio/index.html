@@ -3,133 +3,142 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alex Chen | AI Product Engineer</title>
-    <meta name="description" content="Portfolio of Alex Chen, specializing in AI + Enterprise Efficiency." />
+    <title>Jonathan Rojas | Creative Tech & AI Product Engineer</title>
+    <meta name="description" content="Portfolio of Jonathan Rojas, specializing in creative technology, AI product engineering, and interactive systems." />
     
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Alex Chen | AI Product Engineer" />
-    <meta property="og:description" content="Bridging the gap between machine learning and practical business applications." />
+    <meta property="og:title" content="Jonathan Rojas | Creative Tech & AI Product Engineer" />
+    <meta property="og:description" content="Building scalable, user-centric AI-powered applications with creative technology." />
     <meta property="og:image" content="images/og-image.jpg" />
     
     <!-- Performance optimizations -->
     <link rel="preconnect" href="https://assets.calendly.com" />
     <link rel="dns-prefetch" href="https://hooks.zapier.com" />
     
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="../global.css" />
+    <link rel="stylesheet" href="css/portfolio-styles.css" />
 </head>
 <body>
     <a href="#main-content" class="skip-to-content">Skip to main content</a>
 
-    <header>
-        <div class="container">
-            <nav>
-                <a href="index.html" class="logo">ALEX CHEN.</a>
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">JONATHAN ROJAS</a>
                 <div class="nav-links">
                     <a href="index.html">Home</a>
-                    <a href="portfolio.html">Work</a>
-                    <a href="#contact">Contact</a>
+                    <a href="work.html">Work</a>
+                    <a href="index.html#contact">Contact</a>
                 </div>
-            </nav>
+            </div>
+        </nav>
+
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>Creative Tech & AI Product Engineering.</h1>
+                    <p>I design and build intelligent, interactive systems that blend creativity with technology. Embodying The Creator archetype, I develop scalable AI-powered applications that solve real-world problems while delivering exceptional user experiences. My expertise spans interactive AI systems, product strategy, and innovative solutions that transform ideas into impact.</p>
+                    <a href="#consultation" class="btn">Schedule a Consultation</a>
+                </div>
+                <div class="hero-image">
+                    <img src="images/jonathan-rojas-portrait.jpg" alt="Professional portrait of Jonathan Rojas, Creative Tech & AI Product Engineer" />
+                </div>
+            </div>
         </div>
     </header>
 
-    <main id="main-content" class="container">
-        
-        <!-- Hero Section: Authority & Positioning -->
-        <section class="hero-section">
-            <div class="hero-text">
-                <h1>AI + Enterprise Efficiency.</h1>
-                <p>I bridge the gap between complex machine learning models and practical business applications. As an AI Product Engineer, I build systems that don't just think—they work.</p>
-                <a href="#consultation" class="btn">Book a Strategy Call</a>
-            </div>
-            <div class="hero-image">
-                <img src="images/alex-chen-portrait.jpg" alt="Professional portrait of Alex Chen, AI Product Engineer, wearing black turtleneck against neutral background" />
-            </div>
-        </section>
-
-        <!-- About: Brand Archetype (The Sage/Creator) -->
-        <section>
-            <div class="col-left">
-                <h2>The Methodology.</h2>
-            </div>
-            <div class="col-right">
-                <p><strong>Knowledge is potential. Execution is power.</strong></p>
-                <p>My approach combines the rigorous analysis of a data scientist with the creative problem-solving of a product designer. I don't just implement AI; I architect solutions that scale.</p>
-                <p><em>"Simplicity is the ultimate sophistication."</em></p>
+    <main id="main-content">
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <div class="col-left">
+                    <h2>Development Philosophy.</h2>
+                </div>
+                <div class="col-right">
+                    <p><strong>Code quality matters. Creativity drives innovation.</strong></p>
+                    <p>My approach combines solid software engineering principles with creative problem-solving and AI expertise. I don't just build applications; I architect intelligent systems designed for scale, user delight, and long-term success.</p>
+                    <p><em>"The best technology is invisible—it just works."</em></p>
+                </div>
             </div>
         </section>
 
-        <!-- Services: Cialdini's Principles -->
-        <section>
-            <div class="service-card">
-                <h3>Audit & Strategy</h3>
-                <p><strong>Reciprocity:</strong> I offer a free initial audit of your current data infrastructure to identify high-impact AI opportunities.</p>
-            </div>
-            <div class="service-card">
-                <h3>Custom LLM Integration</h3>
-                <p><strong>Scarcity:</strong> I only take on 3 enterprise clients per quarter to ensure deep focus and bespoke quality.</p>
-            </div>
-            <div class="service-card">
-                <h3>Automated Workflows</h3>
-                <p><strong>Social Proof:</strong> Trusted by over 15 startups to automate their core business logic using Zapier and Python.</p>
-            </div>
-        </section>
-
-        <!-- Calendly Integration -->
-        <section id="consultation" class="cta-section">
-            <h2>Free 30-Minute Consultation</h2>
-            <p>Let's discuss how AI can reduce your operational costs by 20%.</p>
-            
-            <!-- Calendly inline widget begin -->
-            <div class="calendly-inline-widget" data-url="https://calendly.com/" style="min-width:320px;height:630px;"></div>
-            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-            <!-- Calendly inline widget end -->
-        </section>
-
-        <!-- Contact Form: Zapier Integration -->
-        <section id="contact">
-            <div class="col-left">
-                <h2>Get in Touch.</h2>
-                <p>Ready to transform your business?</p>
-            </div>
-            <div class="col-right">
-                <!-- This form would be connected to a Zapier Webhook URL -->
-                <form action="https://hooks.zapier.com/hooks/catch/123456/abcdef/" method="POST" class="contact-form" aria-label="Contact form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required />
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <div class="checkbox-group">
-                        <input type="checkbox" id="consent" name="consent" required />
-                        <label for="consent">I agree to the privacy policy and to be contacted.</label>
-                    </div>
-                    <button type="submit" class="btn" style="width: auto; justify-self: start;">Send Message</button>
-                </form>
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2>Featured Work</h2>
+                <div class="service-cards">
+                    <article class="service-card">
+                        <h3>AI Product Engineering</h3>
+                        <p><strong>Interactive AI Systems:</strong> Designing and deploying machine learning models, LLM integrations, and intelligent automation that enhance user engagement and operational efficiency.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Creative Tech Solutions</h3>
+                        <p><strong>Frontend to Backend:</strong> Building responsive, accessible interfaces paired with robust server-side logic using React, Node.js, Python, and modern databases with creative flair.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Strategic Consultation</h3>
+                        <p><strong>Architecture & Product Strategy:</strong> Partnering with teams to design AI-driven systems, conduct technical reviews, and establish best practices for sustainable, creative development.</p>
+                    </article>
+                </div>
             </div>
         </section>
 
+        <!-- Calendly Booking Section -->
+        <section id="consultation" class="consultation-section">
+            <div class="container">
+                <h2>Schedule a Consultation</h2>
+                <p>Let's discuss your project requirements and how I can help bring your vision to life.</p>
+                
+                <!-- Calendly inline widget -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/" style="min-width:320px;height:630px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="col-left">
+                    <h2>Let's Connect.</h2>
+                    <p>Have a project in mind?</p>
+                </div>
+                <div class="col-right">
+                    <form action="https://hooks.zapier.com/hooks/catch/123456/abcdef/" method="POST" class="contact-form" aria-label="Contact form to send a message">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required aria-required="true" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required aria-required="true" />
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="consent" name="consent" required aria-required="true" />
+                            <label for="consent">I agree to the privacy policy and to be contacted.</label>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2025 Alex Chen. All rights reserved.</p>
-                <div>
-                    <a href="#">Privacy Policy</a>
-                    <span style="margin: 0 10px;">|</span>
-                    <a href="#">LinkedIn</a>
-                    <span style="margin: 0 10px;">|</span>
-                    <a href="#">GitHub</a>
-                </div>
+                <p>&copy; 2025 Jonathan Rojas. All rights reserved.</p>
+                <nav class="footer-links">
+                    <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
+                    <span aria-hidden="true">|</span>
+                    <a href="#" aria-label="Visit my LinkedIn profile">LinkedIn</a>
+                    <span aria-hidden="true">|</span>
+                    <a href="#" aria-label="Visit my GitHub profile">GitHub</a>
+                </nav>
             </div>
         </div>
     </footer>
@@ -142,11 +151,11 @@
             threshold: 0.1
         };
 
-        const observer = new IntersectionObserver((entries, observer) => {
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible');
-                    observer.unobserve(entry.target); // Only animate once
+                    observer.unobserve(entry.target);
                 }
             });
         }, observerOptions);

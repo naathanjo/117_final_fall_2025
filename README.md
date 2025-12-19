@@ -1,347 +1,252 @@
-# 🎓 IS117 Final Project: Professional Web Portfolio System
+# IS117 Final Project: Creative Tech Portfolio Hub
 
-> **Build three production-ready websites that demonstrate mastery of modern web development, strategic design thinking, and professional positioning in the AI era.**
-
-[![Lighthouse CI](https://img.shields.io/badge/Lighthouse-100%2F100-brightgreen)](https://github.com/GoogleChrome/lighthouse-ci)
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+**Student:** Jonathan Rojas  
+**Course:** IS117  
+**Live Site:** [Link Coming Soon]
 
 ---
 
-## 📋 Table of Contents
+## 📌 Project Overview
 
-1. [Project Overview](#-project-overview)
-2. [Live Example Sites](#-live-example-sites)
-3. [What You'll Build](#-what-youll-build)
-4. [Technical Requirements](#-technical-requirements)
-5. [Design Excellence](#-design-excellence-standards)
-6. [Quality Gates](#-quality-gates--cicd)
-7. [Final Presentation](#-final-presentation)
-8. [Submission Guidelines](#-submission-guidelines)
+A comprehensive web development project showcasing three distinct sites built with responsive design principles, advanced CSS Grid systems, and semantic HTML5 architecture.
 
 ---
 
-## 🎯 Project Overview
+## 🛠️ Included Sites
 
-This is your capstone project. You will design, develop, and deploy **three interconnected websites** that showcase your ability to think strategically, code professionally, and position yourself as a cutting-edge **AI Product Engineer** or **AI + X specialist** (e.g., AI + Cybersecurity, AI + UX Design, AI + Healthcare).
+### 1. **Personal Professional Portfolio**
 
-### Why This Matters
-In today's job market, having a portfolio isn't optional—it's expected. But a *great* portfolio does more than show code. It tells a story, demonstrates strategic thinking, and proves you can ship production-quality work under real-world constraints.
+**Archetype:** The Creator
 
----
+**Purpose:** Present myself as a Creative Tech Engineer through interactive UX and professional presentation.
 
-## 🌐 Live Example Sites
-
-Explore the reference implementation deployed on GitHub Pages:
-
-### 🏠 [**Landing Page**](https://kaw393939.github.io/117_final_fall_2025/)
-A beautiful hub connecting all three projects with smooth animations and modern design.
-
-### 💼 [**Portfolio Site: Alex Chen - AI Product Engineer**](https://kaw393939.github.io/117_final_fall_2025/portfolio/)
-**Design System:** Swiss International Style (Modernist Typography)  
-**Brand Archetype:** The Sage + The Creator  
 **Key Features:**
-- Fluid typography (16px → 20px based on viewport)
-- CSS Grid mastery with 12-column system
-- Calendly integration for consultations
-- Zapier-powered contact form
-- Responsive design with mobile-first approach
+- Multi-page navigation system
+- Semantic HTML5 structure
+- Interactive components and micro-interactions
+- Professional booking/consultation system
 
-**Design Highlights:**
-```css
-/* Fluid Typography Example */
-font-size: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
-
-/* Massive Heading Scale */
-h1 { font-size: clamp(3rem, 2.07rem + 4.63vw, 8rem); }
-```
-
-### 🎨 [**Design Style Site: International Typographic Style**](https://kaw393939.github.io/117_final_fall_2025/design_style/)
-An educational "museum piece" exploring the Swiss design movement.  
-**Tech Focus:** Pure CSS Grid, asymmetric layouts, bold typography
-
-### 🌿 [**Client Site: GreenLeaf Landscaping**](https://kaw393939.github.io/117_final_fall_2025/client_site/)
-A conversion-optimized business website featuring:
-- Sales funnel design
-- Parallax scrolling effects
-- Mobile-optimized service cards
-- Form-to-CRM pipeline (Zapier)
+**Technologies:**
+- HTML5 (semantic tags)
+- CSS3 (Grid, Flexbox, animations)
+- Vanilla JavaScript
+- Responsive design (mobile-first)
 
 ---
 
-## 🛠 What You'll Build
+### 2. **Design History: Humanist Modernism**
 
-### 1️⃣ Personal Portfolio (Main Site)
-Position yourself as an **AI Product Engineer** or niche specialist using:
+**Style:** Humanist Modernism
 
-#### Strategic Elements:
-- **Brand Archetype Selection:** Choose from The Hero, The Sage, The Creator, etc.
-- **Cialdini's Persuasion Principles:** Implement:
-  - **Reciprocity:** Free audit/consultation
-  - **Scarcity:** Limited availability messaging
-  - **Authority:** Testimonials, case studies
-  - **Social Proof:** "Trusted by X startups"
+**Purpose:** Museum-quality presentation exploring the intersection of rational geometry and human-centered design principles.
 
-#### Required Integrations:
-- [ ] **Calendly:** Embed a booking widget for free consultations
-- [ ] **Zapier Webhook:** Connect contact form to email/Slack/Sheets
-- [ ] **Analytics:** Google Analytics or Plausible
+**Key Features:**
+- Asymmetrical 12-column CSS Grid layout
+- High-legibility typographic systems
+- Warm color palette (#f9f7f2, #2a2a2a, #d97706)
+- Humanist sans-serif typography (Open Sans, Segoe UI)
+- Gallery section with 3D renders
+- Intersection Observer animations
 
-### 2️⃣ Design Style Site
-Complete your earlier design style assignment with:
-- Fully responsive layout
-- Accurate representation of your chosen design movement
-- Museum-quality presentation
+**Technologies:**
+- HTML5 semantic structure
+- CSS3 Grid (12-column system)
+- Fluid typography with `clamp()`
+- JavaScript (Intersection Observer API)
 
-### 3️⃣ Client Website
-Build a professional site for a real or fictional client:
-- Clear value proposition
-- Sales funnel (Lead Magnet → Form → Conversion)
-- Service/product showcase
-- Social proof elements
+**Color Palette:**
+- Background: `#f9f7f2` (Warm off-white)
+- Text: `#2a2a2a` (Deep charcoal)
+- Accent: `#d97706` (Muted clay orange)
 
 ---
 
-## ⚙️ Technical Requirements
+### 3. **Client Site: TrailMapper**
 
-### Tech Stack Options
-| Standard | Advanced (Optional) |
-|----------|---------------------|
-| HTML5 + CSS3 + Vanilla JS | Next.js, Astro, Eleventy |
-| GitHub Pages hosting | Custom domain (bonus) |
+**Client:** Erick Rosas (Adventure Photographer & Trekker)
 
-### Mandatory Setup
-```bash
-# Initialize project
-npm init -y
+**Purpose:** Conversion-optimized landing page for a trail safety and navigation app.
 
-# Install quality tools
-npm install --save-dev htmlhint stylelint @lhci/cli husky lint-staged
+**Key Features:**
+- Responsive hamburger navigation menu
+- Structured sales funnel (Hero → Features → Social Proof → CTA)
+- Mobile-first responsive design
+- Feature highlight cards (Offline Maps, AI Safety Alerts, Location Sharing)
+- Testimonial section with social proof
+- Email capture form with CTA
+- Inclusive language for all adventurers
 
-# Setup pre-commit hooks
-npx husky install
+**Technologies:**
+- HTML5 form elements with validation
+- CSS3 (12-column Grid, Flexbox)
+- Vanilla JavaScript (menu toggle, smooth scroll)
+- ARIA accessibility labels
+- Mobile hamburger menu with animation
+
+**Color Palette:**
+- Primary: `#2d5a27` (Forest Green)
+- Secondary: `#333333` (Earthy Charcoal)
+- Accent: `#ff6b35` (Safety Orange)
+- Background: `#ffffff` (Clean white)
+
+---
+
+## 🔧 Technical Requirements Met
+
+### HTML5 & Semantics
+- ✅ Proper use of `<header>`, `<main>`, `<section>`, `<article>`, `<footer>`
+- ✅ ARIA labels for accessibility (`aria-label`, `aria-expanded`)
+- ✅ Skip-to-content links on all pages
+- ✅ Semantic form elements with validation
+
+### Responsive Design
+- ✅ Mobile-first approach
+- ✅ Fluid typography using `clamp()`
+- ✅ Flexible grid layouts
+- ✅ Breakpoints: 1024px, 768px, 480px
+- ✅ Touch-friendly interactive elements
+
+### CSS Architecture
+- ✅ Global CSS variables for consistency
+- ✅ 12-column CSS Grid system
+- ✅ Flexbox for component layouts
+- ✅ CSS animations and transitions
+- ✅ Rounded corners and shadows for depth
+- ✅ Consistent spacing scale (xs, sm, md, lg, xl, xxl)
+
+### JavaScript Functionality
+- ✅ Mobile hamburger menu toggle
+- ✅ Smooth scroll behavior for anchor links
+- ✅ Intersection Observer API for animations
+- ✅ Event delegation and cleanup
+- ✅ ARIA state management (`aria-expanded`)
+
+### Performance & Optimization
+- ✅ Global stylesheet for shared variables
+- ✅ Optimized image handling with alt text
+- ✅ Preconnect and DNS prefetch hints
+- ✅ Accessible color contrast ratios
+- ✅ Lean JavaScript (no frameworks)
+
+---
+
+## 📁 Project Structure
+
 ```
-
-### File Structure
-```
-your-repo/
-├── .github/
-│   └── workflows/
-│       └── lighthouse-ci.yml
-├── docs/                    # GitHub Pages serves from here
-│   ├── index.html          # Landing page
+117_final_fall_2025/
+├── global.css                          # Shared variables and global styles
+├── index.html                          # Portfolio hub landing page
+├── docs/
 │   ├── portfolio/
+│   │   ├── index.html                 # Portfolio projects showcase
+│   │   └── css/
+│   │       └── portfolio-styles.css   # Portfolio-specific styles
 │   ├── design_style/
+│   │   ├── index.html                 # Humanist Modernism design study
+│   │   ├── css/
+│   │   │   └── humanist-styles.css   # Design study styles
+│   │   └── images/                    # 3D renders and assets
 │   └── client_site/
-├── .htmlhintrc
-├── .stylelintrc.json
-├── lighthouserc.json
-└── package.json
+│       ├── index.html                 # TrailMapper landing page
+│       ├── css/
+│       │   └── client-styles.css     # TrailMapper styles
+│       └── images/                    # Product and testimonial images
+└── README.md                          # This file
 ```
 
 ---
 
-## 🎨 Design Excellence Standards
+## 🎨 Design Systems
 
-### Responsive Typography
-Use fluid type scales for seamless scaling:
+### Color Variables
+All sites use a consistent CSS variable structure:
 
 ```css
-:root {
-  /* Base: 16px at 320px viewport → 20px at 1400px */
-  font-size: clamp(1rem, 0.92rem + 0.39vw, 1.25rem);
-}
-
-h1 {
-  /* Massive scale: 48px → 128px */
-  font-size: clamp(3rem, 2.07rem + 4.63vw, 8rem);
-}
+--color-primary:      /* Main brand color */
+--color-secondary:    /* Complementary color */
+--color-accent:       /* Call-to-action color */
+--color-text:         /* Primary text */
+--color-text-light:   /* Secondary text */
+--color-bg:           /* Background */
+--color-bg-alt:       /* Alternate background */
 ```
 
-**Tool:** [Fluid Type Scale Calculator](https://www.fluid-type-scale.com/)
+### Typography Scale
+Fluid fonts that scale responsively:
 
-### Mobile-First Breakpoints
 ```css
-/* Mobile: 320px - 768px (base styles) */
-body { font-size: 1rem; }
-
-/* Tablet: 768px - 1024px */
-@media (min-width: 768px) {
-  .container { padding: 0 40px; }
-}
-
-/* Desktop: 1024px+ */
-@media (min-width: 1024px) {
-  .grid { grid-template-columns: repeat(12, 1fr); }
-}
+--font-size-h1:   clamp(2rem, 5vw, 3.5rem)
+--font-size-h2:   clamp(1.75rem, 4vw, 2.5rem)
+--font-size-h3:   clamp(1.25rem, 3vw, 1.4rem)
+--font-size-body: clamp(0.95rem, 2vw, 1.1rem)
 ```
 
-### Color Contrast Requirements
-All text must meet **WCAG AA** standards:
-- Normal text: 4.5:1 contrast ratio minimum
-- Large text (18px+): 3:1 minimum
+### Spacing Scale
+Consistent spacing hierarchy:
 
-**Check your colors:** [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
-
-### Performance Budget
-| Metric | Target |
-|--------|--------|
-| First Contentful Paint | < 1.8s |
-| Largest Contentful Paint | < 2.5s |
-| Total Blocking Time | < 200ms |
-| Cumulative Layout Shift | < 0.1 |
-
----
-
-## ✅ Quality Gates & CI/CD
-
-### Lighthouse CI Scores
-All sites must achieve:
-- **Accessibility:** 100/100 ✅
-- **SEO:** 100/100 ✅
-- **Performance:** 90+ ⚠️
-- **Best Practices:** 90+ ⚠️
-
-### Pre-Commit Hooks
-```json
-// package.json
-{
-  "lint-staged": {
-    "*.html": "htmlhint",
-    "*.css": "stylelint"
-  }
-}
+```css
+--spacing-xs:   0.5rem
+--spacing-sm:   1rem
+--spacing-md:   1.5rem
+--spacing-lg:   2rem
+--spacing-xl:   3rem
+--spacing-xxl:  4rem
 ```
-
-### GitHub Actions Workflow
-Your CI/CD pipeline will automatically:
-1. Lint HTML/CSS on every commit
-2. Run Lighthouse audits on every push
-3. Block merges if scores fall below thresholds
-
-**View the workflow:** [`.github/workflows/lighthouse-ci.yml`](.github/workflows/lighthouse-ci.yml)
-
----
-
-## 📊 Final Presentation
-
-### Format
-A **5-minute pitch deck** delivered as if you're presenting to a prospective client.
-
-### Required Slides
-
-#### 1. The Hook (30 seconds)
-Open with your unique value proposition:  
-*"I architect AI systems that don't just think—they work."*
-
-#### 2. Case Study: Personal Brand (1.5 min)
-- Show your portfolio site
-- Explain your brand archetype
-- Highlight one persuasion principle you used
-
-#### 3. Case Study: Client Work (1.5 min)
-- Present the client site
-- Identify the problem you solved
-- Show the sales funnel in action
-
-#### 4. Technical Mastery (1 min)
-- Display your Lighthouse scores
-- Briefly explain your CI/CD pipeline
-- Mention responsive design techniques
-
-#### 5. Course Learnings (30 seconds)
-Summarize your top 3 takeaways from IS117.
-
-#### 6. AI Collaboration Analysis (30 seconds)
-Include insights from asking your AI assistant:
-1. *"Describe our collaboration and my prompting strategy"*
-2. *"How can I improve my collaboration and prompting strategy?"*
-
-#### 7. Call to Action (30 seconds)
-End with: *"Let's schedule a 30-minute consultation to discuss your next project."*
-
-### Delivery Tips
-- Use Canva for professional visuals
-- Avoid bullet-point slides—use visuals
-- Practice to stay within 5 minutes
-
----
-
-## 📦 Submission Guidelines
-
-Submit via Canvas:
-
-1. **GitHub Repository URL**
-2. **Live Site URLs:**
-   - Landing page: `https://yourusername.github.io/your-repo/`
-   - Portfolio: `https://yourusername.github.io/your-repo/portfolio/`
-   - Design style: `https://yourusername.github.io/your-repo/design_style/`
-   - Client site: `https://yourusername.github.io/your-repo/client_site/`
-3. **Presentation Deck Link** (Google Slides, Canva, or PDF)
-4. **Self-Assessment Checklist** (complete all 5 checklists below)
-
----
-
-## 📋 Quality Checklists
-
-Before submitting, complete all checklists:
-
-- ✅ [**Accessibility Checklist**](./requirements/accessibility_checklist.md) - Ensure WCAG compliance
-- ✅ [**UI/UX Design Checklist**](./requirements/ui_ux_checklist.md) - Verify responsiveness & usability
-- ✅ [**Technical & SEO Checklist**](./requirements/technical_checklist.md) - Validate code & optimization
-- ✅ [**Legal & Compliance Checklist**](./requirements/legal_checklist.md) - Cover privacy & copyright
-- ✅ [**Presentation Checklist**](./requirements/presentation_checklist.md) - Prepare your pitch
 
 ---
 
 ## 🚀 Getting Started
 
-1. **Fork this repository** (or create your own from scratch)
-2. **Study the example sites** in the `docs/` folder
-3. **Install dependencies:** `npm install`
-4. **Run local server:** `npm start` (or use Live Server extension)
-5. **Commit often** and let Husky catch errors early
-6. **Deploy to GitHub Pages** via Settings → Pages → Source: `main` branch, `/docs` folder
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd 117_final_fall_2025
+   ```
+
+2. **Open in browser:**
+   - Main portfolio hub: `index.html`
+   - Design study: `docs/design_style/index.html`
+   - Client site: `docs/client_site/index.html`
+
+3. **No build tools required** – all files are static HTML, CSS, and vanilla JavaScript.
 
 ---
 
-## 💡 Pro Tips
+## 📱 Responsive Breakpoints
 
-- **Start with mobile design first** - It's easier to scale up than down
-- **Use CSS variables** for consistent theming
-- **Comment your code** - Future you will thank you
-- **Test on real devices** - Browser DevTools aren't enough
-- **Ask your AI assistant for code reviews** - It's like having a senior dev on call
-
----
-
-## 🎓 Learning Outcomes
-
-By completing this project, you will:
-- ✅ Master responsive design with fluid typography
-- ✅ Implement professional CI/CD pipelines
-- ✅ Build accessible, SEO-optimized websites
-- ✅ Integrate third-party APIs (Zapier, Calendly)
-- ✅ Position yourself strategically in the job market
-- ✅ Create a portfolio that opens doors
+| Device | Breakpoint | Layout |
+|--------|-----------|--------|
+| Mobile | < 480px | Single column, hamburger menu |
+| Tablet | 480px – 768px | 2-column, mobile navigation |
+| Laptop | 768px – 1024px | 3-4 column grid |
+| Desktop | > 1024px | Full 12-column grid |
 
 ---
 
-## 📞 Need Help?
+## ♿ Accessibility Features
 
-- **Office Hours:** Check Canvas for schedule
-- **Discord:** Join the class server for peer support
-- **AI Assistant:** Use ChatGPT/Claude for code reviews and debugging
-
-**Remember:** This project is your portfolio. Make it something you're proud to show employers.
+- ✅ ARIA labels on interactive elements
+- ✅ Semantic HTML structure
+- ✅ Skip-to-content navigation links
+- ✅ Keyboard-navigable menus
+- ✅ High contrast color ratios (WCAG AA compliant)
+- ✅ Alt text on all images
+- ✅ Form validation and error messaging
+- ✅ Focus states on all interactive elements
 
 ---
 
-<div align="center">
+## 📝 Notes
 
-**Good luck! 🚀**
+- All pages are fully responsive and tested across major browsers
+- JavaScript is vanilla (no frameworks or dependencies)
+- Performance optimized with minimal external resources
+- Images should be optimized before deployment (use WebP with fallbacks)
 
-*"The best way to predict the future is to design it."*  
-— Buckminster Fuller
+---
 
-</div>
+**Portfolio Hub:** [Main Site]  
+**Design Study:** Humanist Modernism exploration  
+**Client Project:** TrailMapper – Trail Safety App Landing Page
+
+*Last Updated: December 2025*
